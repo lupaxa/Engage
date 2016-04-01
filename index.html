@@ -1,0 +1,142 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="https://code.jquery.com/jquery-2.2.2.js" integrity="sha256-4/zUCqiq0kqxhZIyp4G0Gk+AOtCJsY1TA00k5ClsZYE=" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+       <main>
+           <section class="order-status ">
+               <div class="order-status--all order-status-item active"  data-status='all'><span>Все заказы</span></div>
+               <div class=" order-status-item" data-status='send' ><span>Текущие</span></div>
+               <div class=" order-status-item"  data-status='done'><span>Завершенные</span></div>
+               <div class=" order-status-item"  data-status='revoke'><span>Отмененные</span></div>
+           </section>
+           <section class="order-block">
+               <div class="order-block-header">
+                   <div class=" cell-block sorting-label">Дата заказа</div>
+                   <div class=" cell-block">№ заказа</div>
+                   <div class=" cell-block">Текущий статус</div>
+
+               </div>
+               <div class="order-block-list order-list">
+                   <div class="order-list-item js-order-item" data-status='revoke'>
+                       <div class="order-item-header">
+                           <div class=" cell-block">9 июля 2012</div>
+                           <div class=" cell-block  number-block">№0570</div>
+                           <div class=" cell-block label status-block status--revoke" ><span>Oтменен</span></div>
+                           <div class="cell-block--big"><span class="hide-arrow-btn"></span></div>
+                       </div>
+                       <div class="order-item-contant"></div>
+                   </div>
+                   <div class="order-list-item js-order-item " data-status='send'>
+                       <div class="order-item-header">
+                           <div class=" cell-block">3 июля 2012</div>
+                           <div class=" cell-block  number-block">№ me0017681</div>
+                           <div class=" cell-block label status-block status--send"><span>Отправлен курьерской службой</span></div>
+                           <div class="cell-block--big"><span class="hide-arrow-btn"></span></div>
+                       </div>
+                       <div class="order-item-contant js-order-content">
+                           <div class="order-content-title">
+                               <div class=" cell-block">
+                                   <ul class="order-list-title">
+                                       <li>Имя получателя:</li>
+                                       <li>Электроннаая почта:</li>
+                                       <li>Доставка:</li>
+                                       <li>Оплата:</li>
+                                   </ul>
+                               </div>
+                               <div class=" cell-block">
+                                   <ul>
+                                       <li>г.Киев ул.Саксаганского, 65, кв. 11 </li>
+                                       <li>+38 050 123-45-56</li>
+                                       <li>Курьером лично в руки.Адрес:г.Киев ул.Саксаганского, 65, кв. 11 </li>
+                                       <li>Наличными при получении</li>
+                                   </ul>
+                               </div>
+                           </div>
+                           <div class="order-content-product product-list">
+                                <div class="product-list-header">
+                                    <div class="cell-block">Товары в заказе</div>
+                                    <div class="cell-block">Количество</div>
+                                    <div class="cell-block">Цена</div>
+                                </div>
+
+                               <div class="product-item-block">
+                                   <div class="product-list-item product-item">
+                                       <div class="product-item-info">
+                                           <div class="product-item-img">
+                                               <img src="img/book1.jpg" alt="Девушка с татуировкой дракона">
+                                               <span></span>
+                                           </div>
+                                           <h4>
+                                               <a href="#">Девушка с татуировкой дракона</a>
+                                               <span>Стиг Ларсcон</span> </br>
+                                               <span class="cur-price">138гр.</span>
+                                           </h4>
+                                       </div>
+                                       <div class="product-item-num">1</div>
+                                       <div class="product-item-price">138гр.</div>
+                                   </div>
+                                   <div class="product-list-item product-item">
+                                       <div class="product-item-info">
+                                           <div class="product-item-img">
+                                               <img src="img/book2.jpg" alt="Девушка которая взрывала воздушные замки">
+                                               <span></span>
+                                           </div>
+                                           <h4>
+                                               <a href="#">Девушка которая взрывала воздушные замки</a>
+                                               <span>Стиг Ларсcон</span> </br>
+                                               <span class="last-price">170грн.</span>
+                                               <span class="cur-price">138гр.</span>
+                                           </h4>
+                                       </div>
+                                       <div class="product-item-num">1</div>
+                                       <div class="product-item-price">138гр.</div>
+                                   </div>
+                               </div>
+                               <div class="order-content-delivery">
+                                   <p>Доставка: <span>20грн.</span></p>
+                               </div>
+                               <div class="order-content-summ">
+                                   <div class="summ-bonus"><span>+38 бонусов</span> за этот заказ</div>
+                                   <div class="sum-amount"> <p>Сумма заказа: <span>182грн.</span></p></div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="order-list-item js-order-item " data-status='done'>
+                       <div class="order-item-header">
+                           <div class=" cell-block">17 мая 2012</div>
+                           <div class=" cell-block  number-block">№0570</div>
+                           <div class=" cell-block label status-block status--done"><span>Доставлен</span></div>
+                           <div class="cell-block--big"><span class="hide-arrow-btn"></span></div>
+                       </div>
+                       <div class="order-item-contant"></div>
+                   </div>
+                   <div class="order-list-item js-order-item" data-status='done'>
+                       <div class="order-item-header">
+                           <div class=" cell-block">29 февраля 2012</div>
+                           <div class=" cell-block number-block">№ me0017681</div>
+                           <div class=" cell-block label status-block status--done"><span>Доставлен</span></div>
+                           <div class="cell-block--big"><span class="hide-arrow-btn"></span></div>
+                       </div>
+                       <div class="order-item-contant"></div>
+                   </div>
+               </div>
+           </section>
+       </main>
+
+        <script src="js/main.js"></script>
+
+
+    </body>
+</html>

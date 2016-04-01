@@ -1,0 +1,123 @@
+
+.order-content-title{
+  display: flex;
+  .cell-block:nth-child(2){
+    width: 65%;
+  }
+  ul{
+    list-style-type: none;
+    padding: 0;
+    li{
+      padding-bottom: 5px;
+    }
+  }
+  .order-list-title{
+    color: #999999;
+  }
+}
+.order-content-product{
+  padding: 1.5em 0 2em 0;
+}
+.product-list-header{
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  padding: 1.5em 0;
+  .cell-block{
+    width: 30%;
+    min-width: 100px;
+    text-align: right;
+    padding: 0;
+  }
+  .cell-block:first-child{
+    text-align: left;
+  }
+}
+.product-item-block{
+  padding: 1.8em 0;
+  border-bottom: 1px dotted rgba(204, 204, 204, .4);
+  border-top: 1px dotted rgba(204, 204, 204, .4);
+}
+.product-list-item{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1.8em;
+  .product-item-info{
+    display: flex;
+    align-items: flex-start;
+    width: 44%;
+    .product-item-img{
+      padding-right: 10px;
+      position: relative;
+      span{
+        background: url(../img/icons/bool-icon.png);
+        width: 21px;
+        height: 21px;
+        position: absolute;
+        bottom: 0;
+        left:-10px;
+      }
+    }
+    h4{
+      font-size: 86%;
+      margin: 0;
+      a{
+        color: $color-blue-dark;
+        text-decoration: none;
+      }
+      span{
+        font-weight: 400;
+      }
+      .cur-price{
+        padding-top: 4px;
+        display: block;
+        @extend .product-item-price;
+      }
+      .last-price{
+        text-decoration: line-through;
+        color: $color-grey;
+        display: block;
+        padding-top: 7px;
+      }
+    }
+  }
+  .product-item-num{
+    width: 25%;
+    padding-left: 5%;
+  }
+  .product-item-price{
+    color:$color-orange;
+    font-weight: bold;
+  }
+}
+.order-content-delivery{
+  text-align: right;
+  border-bottom: 1px dotted rgba(204, 204, 204, .4);
+  p{
+    margin: 0;
+    padding: 1.4em 0;
+  }
+  span{
+    color:$color-orange;
+    font-weight: bold;
+  }
+}
+.order-content-summ{
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 0;
+  .summ-bonus{
+    background-color: $color-grey-back;
+    display: inline-table;
+    padding: 7px 13px;
+    span{
+      font-weight: bold;
+    }
+  }
+  p{
+    span{
+      color:$color-orange;
+      font-weight: bold;
+    }
+  }
+}

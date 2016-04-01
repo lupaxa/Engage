@@ -1,0 +1,39 @@
+//  vars
+$base-font-family: verdana;
+$base-font-size: 14px;
+$header-font-size: 142.86%;
+$color-blue:#25a7df;
+$color-blue-dark:#5070a0;
+$color-orange:#f15e00;
+$color-grey:#cccccc;
+$color-grey-back:#edf1f2;
+$color-green:#48ad00;
+$color-red:#cc3300;
+
+// ---------------font-face---------------
+@font-face {
+  font-family: verdana ,  sans-serif;
+  src: url('fonts/verdana.ttf');
+}
+
+// ----------------MIXIN---------------
+@mixin border-gradient{
+  content: "";
+  background-image: linear-gradient(to right, white 0%, white 2%, #cccccc 16%, #cccccc 42%, #cccccc 88%, white 100%);
+  height: 1px;
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+
+// ----------------media queries---------------
+$mobile-width: 320px;
+$tablet-width: 560px;
+
+@mixin mobile {
+  @media (min-width: #{$mobile-width}) and (max-width: #{$tablet-width - 1px}) {
+    @content;
+  }
+}
